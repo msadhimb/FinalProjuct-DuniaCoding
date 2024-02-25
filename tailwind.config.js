@@ -9,6 +9,7 @@ export default {
     extend: {
       fontFamily: {
         kodeMono: ["Kode Mono", "monospace"],
+        poppins: ["Poppins", "sans-serif"],
       },
     },
   },

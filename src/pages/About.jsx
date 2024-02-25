@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="container mx-auto py-8 grid grid-cols-1 md:grid-cols-2 h-screen items-center content-center">
+    <div className="mx-5 md:container md:mx-auto py-8 grid grid-cols-1 md:grid-cols-2 h-screen items-center content-center">
       <div className="w-full md:w-2/3 mx-auto">
         <img
           src="https://pngimg.com/uploads/pokemon/pokemon_PNG156.png"

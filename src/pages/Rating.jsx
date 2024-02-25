@@ -66,7 +66,7 @@ const Ratings = () => {
 
   return (
     <>
-      <div className="container my-5 mx-auto font-kodeMono">
+      <div className="mx-5 my-5 md:container md:mx-auto font-kodeMono">
         <h1 className="text-2xl font-bold my-5">
           How would you describe our website?
         </h1>
