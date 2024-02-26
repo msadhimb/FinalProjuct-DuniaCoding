@@ -13,7 +13,6 @@ const Home = () => {
   const [pokemonData, setPokemonData] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [searchTerm, setSearchTerm] = useState("");
-  const [notFound, setNotFound] = useState(false);
   const [modalOpen, setModalOpen] = useState(false);
   const [pokemonDetail, setPokemonDetail] = useState([]);
 
@@ -67,10 +66,8 @@ const Home = () => {
               types: response.data.types,
             },
           ]);
-          setNotFound(false);
         } else {
           setPokemonData([]);
-          setNotFound(true);
         }
       }
     } catch (error) {
@@ -145,12 +142,12 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="mx-5 md:container d:mx-auto">
+        <div className="">
           <div className="h-auto">
             <h1 className="text-xl md:text-4xl text-center font-semibold font-kodeMono flex items-center justify-center z-10 ">
               Popular Pokemon
             </h1>
-            <div className="grid grid-cols-1 md:grid-cols-3 place-items-center align-middle mt-5 mb-14">
+            <div className="grid grid-cols-1 md:grid-cols-3 place-items-center align-middle mt-5 mb-14 w-full">
               <FlipCard
                 img={`https://pngimg.com/uploads/pokemon/pokemon_PNG146.png`}
                 backComponent={

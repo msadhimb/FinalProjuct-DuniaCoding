@@ -5,7 +5,7 @@ const Footers = () => {
   return (
     <>
       <hr />
-      <Footer className="mx-5 md:mx-auto md:container py-5 border-0 shadow-none">
+      <Footer className="px-5 md:container py-5 border-0 shadow-none overflow-hidden">
         <Footer.Copyright href="#" by="Poke Pedia" year={2024} />
         <Footer.LinkGroup>
           <Footer.Link href="#">About</Footer.Link>
